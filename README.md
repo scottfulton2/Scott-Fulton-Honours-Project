@@ -1,3 +1,3 @@
-# AC31007 - User Stories Workshop
+# Scott Fulton - Honours Project
 
-The materials in this repository are used as part of teaching at the University of Dundee.
+The materials in this repository are part of my honours project
