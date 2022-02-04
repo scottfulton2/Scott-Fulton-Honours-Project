@@ -8,18 +8,17 @@ DROP TABLE IF EXISTS `REQUESTS`;
 
 CREATE TABLE `REQUESTS` (
 	`RequestID` int(11) NOT NULL,
-    
-PRIMARY KEY (RequestID)
-)
+    PRIMARY KEY (RequestID)
+);
 
 
 DROP TABLE IF EXISTS `EQUIPMENT`;
 
-CREATE TABLE `REQUESTS` (
+CREATE TABLE `EQUIPMENT` (
 	`EquipmentID` int(11) NOT NULL,
-    
-PRIMARY KEY (EquipmentID)
-)
+    `EquipmentName` varchar(10) DEFAULT NULL,
+    PRIMARY KEY (EquipmentID)
+);
 
 
 DROP TABLE IF EXISTS `REQUESTS`;
