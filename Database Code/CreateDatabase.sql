@@ -1,0 +1,49 @@
+
+DROP DATABASE IF EXISTS `scottfultondb`;
+CREATE DATABASE `scottfultondb`;
+USE `scottfultondb`;
+
+
+DROP TABLE IF EXISTS `REQUESTS`;
+
+CREATE TABLE `REQUESTS` (
+	`RequestID` int(11) NOT NULL,
+    
+PRIMARY KEY (RequestID)
+)
+
+
+DROP TABLE IF EXISTS `EQUIPMENT`;
+
+CREATE TABLE `REQUESTS` (
+	`EquipmentID` int(11) NOT NULL,
+    
+PRIMARY KEY (EquipmentID)
+)
+
+
+DROP TABLE IF EXISTS `REQUESTS`;
+
+CREATE TABLE `REQUESTS` (
+	`RequestID` int(11) NOT NULL,
+    
+PRIMARY KEY (RequestID)
+)
+
+
+DROP TABLE IF EXISTS `REQUESTS`;
+
+CREATE TABLE `REQUESTS` (
+	`RequestID` int(11) NOT NULL,
+    
+PRIMARY KEY (RequestID)
+)
+
+
+DROP TABLE IF EXISTS `REQUESTS`;
+
+CREATE TABLE `REQUESTS` (
+	`RequestID` int(11) NOT NULL,
+    
+PRIMARY KEY (RequestID)
+)
