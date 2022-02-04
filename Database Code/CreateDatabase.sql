@@ -8,6 +8,8 @@ USE `scottfultondb`;
 DROP TABLE IF EXISTS `REQUESTS`;
 CREATE TABLE `REQUESTS` (
 	`RequestID` int(11) NOT NULL,
+    `EquipmentID` int(11) NOT NULL,
+    `MaterialID` int(11) NOT NULL,
     PRIMARY KEY (RequestID)
 );
 
@@ -25,7 +27,7 @@ CREATE TABLE `EQUIPMENT` (
 );
 
 
-
+/*
 DROP TABLE IF EXISTS `REQUESTS`;
 
 CREATE TABLE `REQUESTS` (
@@ -51,3 +53,4 @@ CREATE TABLE `REQUESTS` (
     
 PRIMARY KEY (RequestID)
 )
+*/
