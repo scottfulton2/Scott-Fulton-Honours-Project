@@ -1,7 +1,7 @@
 
-DROP DATABASE IF EXISTS `scottfultondb`;
-CREATE DATABASE `scottfultondb`;
-USE `scottfultondb`;
+DROP DATABASE IF EXISTS `honoursprojectmyad`;
+CREATE DATABASE `honoursprojectmyad`;
+USE `honoursprojectmyad`;
 
 
 
