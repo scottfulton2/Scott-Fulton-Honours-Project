@@ -19,9 +19,12 @@
             <input type="submit" value="template button">
           </form>
           <br></br>
-          <div class="container-fluid" style="padding:0">
-            <a href="login.php">Log In<a>
-          </div>
+          <form>
+            <button type="submit" formaction="login.php">Log In</button>
+          </form>
+          <form>
+            <button type="submit" formaction="sysGuidelineAcc.php">Submit a Request</button>
+          </form>
         </div>
     </div>
 
