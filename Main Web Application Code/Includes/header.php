@@ -25,14 +25,14 @@ echo '<link rel="shortcut icon" href="https://www.dundee.ac.uk/themes/custom/uod
 <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">UOD Technical Request Management System</a> 
+        <a href="index.php" class="navbar-brand">UOD Technical Request Management System</a> 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="toggleMobileMenu" style>
             <ul class="navbar-nav ms-auto text-right">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -41,7 +41,7 @@ echo '<link rel="shortcut icon" href="https://www.dundee.ac.uk/themes/custom/uod
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">System Guidelines</a>
+                    <a class="nav-link" href="sysGuidelinepg.php">System Guidelines</a>
                 </li>
                 <?php
                     if (isset($_SESSION["username"])) {

@@ -3,13 +3,13 @@
 ?>
 
     <div class="jumbotron">
-        <h2 class="text-center">Welcome to the Log In Page!</h2>
+        <h1 class="text-center">Welcome to the Log In Page!</h1>
         <div class="container-fluid">
             <form action="Includes/login.inc.php" method="post">
-                <input type="text" name="username" placeholder="username..." value="username">
-                <label for="username">Username: </label><br>
-                <input type="password" name="pwd" placeholder="password..." value="password">
-                <label for="password">Password: </label><br>
+                <label for="username">Username: </label>
+                <input type="text" name="username" placeholder="username..." value="username" required><br>
+                <label for="password">Password: </label>
+                <input type="password" name="pwd" placeholder="password..." value="password" required><br>
                 <button type="submit" name="submit">Log In</button> 
             </form>
         </div>
