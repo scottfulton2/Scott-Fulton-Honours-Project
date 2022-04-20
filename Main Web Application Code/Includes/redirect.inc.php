@@ -2,28 +2,32 @@
 
 session_start();
 
-if(isset($_SESSION['USER_role']))
+if(isset($_SESSION['accountType']))
 {
-  switch ($_SESSION['USER_role'])
+  switch ($_SESSION['accountType'])
   {
-    case 'Principal Researcher':
-      header('Location:../experimentList.php');
+    case 'System Administrator':
+      header('Location: ../sysAdminHome.php');
       break;
-    case 'Co-Researcher':
-		header('Location:../experimentList.php');
-		break;
-    case 'Lab Manager':
-		header('Location:../UserManagement/LabManagerPage.php');
-		break;
+    case 'Technician':
+		  header('Location: ../technicianHome.php');
+		  break;
+    case 'Finance/Admin Staff':
+		  header('Location: ../financeHome.php');
+		  break;
+    case 'Supervisor':
+      header('Location: ../supervisorHome.php');
+		  break;
     default:
-		header('Location:../login.php');
-		break;
+		  header('Location: ../login.php');
+		  break;
   }
-
   exit();
+} 
 
-} else {
-  header('Location:../login.php');
+else {
+  header('Location: ../login.php');
   exit();
 }
+
 ?>
