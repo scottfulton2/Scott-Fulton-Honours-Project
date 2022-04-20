@@ -19,6 +19,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f1f6f9;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.g-recaptcha {
+  display: inline-block;
+}
+
 /* font size min 14px and no lighter than a font-weight of 300. */
 
 
@@ -27,3 +35,21 @@ h1, h2, h3, h4, h5, h6 {
 #394867 for Body Text */
 
 /* contrast level ontrast Levels - The above colour scheme works well and passes WCAG's recommended contrast ratio. */
+
+
+/*
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}*/

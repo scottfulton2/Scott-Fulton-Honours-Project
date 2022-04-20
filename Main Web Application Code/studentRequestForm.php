@@ -5,8 +5,8 @@
 <div class="jumbotron text-center">
     <h1 class="text-center">Student Technical Request Form</h1>
     <div>
-        <p><b>Please fill out the form below.</b><p><br>
-        <p>All fiels marked with a * are required</p>
+        <p><b>Please fill out the form below.</b></p><br>
+        <p>All fields marked with a * are required</p>
     </div>
 </div>
     
@@ -45,7 +45,7 @@
         <option value="phd">Phd/doctorate</option>
         <option value="research">Research</option>
         <!-- <option value="teaching">teaching</option> -->
-        <option value="Other">Other</option>
+        <option value="other">Other</option>
       </select><br>
 
       <label for="accountno">Account To Be Charged *: </label>
