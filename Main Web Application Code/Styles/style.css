@@ -27,6 +27,17 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
+/*
+label > input[type=radio] { 
+  vertical-align: middle;
+  margin-top: -2px;
+}
+*/
+
+.radio {
+  display:inline-block;
+}
+
 /* font size min 14px and no lighter than a font-weight of 300. */
 
 

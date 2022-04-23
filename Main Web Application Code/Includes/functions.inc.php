@@ -51,13 +51,6 @@ function usernameExists($conn, $username) {
     $sql = mysqli_stmt_init($conn);
     mysqli_stmt_prepare($sql, "SELECT * FROM USERACCOUNTS WHERE Username = ?;");
     
-    /*
-    if (!mysqli_stmt_prepare($sql, "SELECT * FROM USERACCOUNTS WHERE Username = ?;")) {
-        header("Location: ../login.php?error=stmtfailed");
-        exit();
-    }
-    */
-
     mysqli_stmt_bind_param($sql, "s", $username);
 
     mysqli_stmt_execute($sql);
@@ -74,7 +67,6 @@ function usernameExists($conn, $username) {
     mysqli_stmt_close($sql);
 
     return $result;
-
 }
 
 function passwordCheck($conn, $pwd) {

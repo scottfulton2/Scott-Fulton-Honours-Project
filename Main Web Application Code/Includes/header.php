@@ -18,7 +18,7 @@
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a href="index.php" class="navbar-brand">UOD Technical Request Management System</a> 
+    <a href="index.php" class="navbar-brand">UoD Technical Request Management System</a> 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -50,7 +50,7 @@
                     echo "";
                     break;
                   case 'Supervisor':
-                    echo "";
+                    echo "<li class='nav-item'><a class='nav-link' href='supervisorHome.php'>Supervisor Main</a></li>";
                     break;
                   default:
                     echo "";
