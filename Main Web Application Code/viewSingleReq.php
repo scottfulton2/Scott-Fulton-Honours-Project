@@ -34,8 +34,15 @@
     echo "<p>Request Status: " . $row['RequestStatus'] ."</p>";
     echo "<p>Date Submitted: " . $row['DateSubmitted'] ."</p>";
     echo "<p>Nature Of Request: " . $row['NatureOfReq'] ."</p>";
+    echo "<p>Has Request Been Paid?: " . isPaid($row['Paid']) ."</p>";
     //copy this to duplicate for more items: echo "<p>: " . $row[''] ."</p><br>";
     
+    if ($_SESSION["accountType"] === "Finance/Admin Staff") {
+      if (isPaid($row['Paid']) == "No") {
+        echo "<form method='post'><button type='submit' name='paid' value='" . $row['RequestID'] . "' formaction='updateStatus.php' class='button'>Mark as Paid</button></form>";
+      }
+    }
+
     //change this to a switch case statement(s) in case there are a lot of different status we need to take into account
     if ($row['ApprovOneRevStatus'] === "Reviewing") {
       //accept button
@@ -49,6 +56,22 @@
     }
     /*
     will need to add if statements for what to display to the user depending on the user type
+    
+    switch () {
+      case '':
+        ;
+        break;
+      case '':
+        ;
+        break;
+      case '':
+        ;
+        break;
+      default:
+        ;
+        break;
+    }
+    
     */
 
     /*
@@ -94,6 +117,17 @@
   else {
     header("Location: view&ManageRequests.php");
     exit();
+}
+
+function isPaid($paid) {
+  if ($paid == 0) {
+    $result = "No";
+    return $result;
+  }
+  else {
+    $result = "Yes";
+    return $result;
+  }
 }
   ?>
 

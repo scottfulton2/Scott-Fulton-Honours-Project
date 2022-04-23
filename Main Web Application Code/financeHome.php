@@ -3,22 +3,21 @@
 ?>
 
 <div class="jumbotron text-center">
-  <h1 class="text-center">Finance User Menu</h1><br>
-  <h3>Looks like the Finance User login works</h3><br>
+  <h1 class="text-center">Finance Account Menu</h1><br>
 </div>
 
-<!--
+
 <div class="container-fluid" style="padding:0">
-  <div class="jumbotron" style="margin-bottom:1px;">
+  <div class="jumbotron text-center" style="margin-bottom:1px;">
     <form>
-      <button type="submit" formaction="login.php">Log In</button>
+      <button type="submit" formaction="view&ManageRequests.php">View Requests</button>
     </form>
     <form>
-      <button type="submit" formaction="sysGuidelineAcc.php">Submit a Request</button>
+      <button type="submit" formaction="index.php">Return to Main Menu<br><-</button>
     </form>
   </div>
 </div>
--->
+
 
 </body>
 

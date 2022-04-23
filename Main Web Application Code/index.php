@@ -15,6 +15,9 @@
     <form>
       <button type="submit" formaction="sysGuidelineAcc.php">Submit a Request</button>
     </form>
+    <form>
+      <button type="submit" formaction="trackRequest.php">Track a Request</button>
+    </form>
   </div>
 </div>
 

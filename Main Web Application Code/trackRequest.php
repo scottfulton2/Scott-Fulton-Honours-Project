@@ -3,10 +3,9 @@
 ?>
 
 <div class="jumbotron">
-  <h1 class="text-center">Logged In As Supervisor</h1>      
-  <h3 class="text-center">Find a Request</h3>
+        <h1 class="text-center">Track a Request</h1>
         <div class="container-fluid">
-            <form action="SupervisorHandle.php" method="post"> <!-- will need to create a new files for Supervisor's being able to view and review a request -->
+            <form action="trackRequestHandle.php" method="post">
                 <label for="requestID">Request ID: </label>
                 <input type="text" name="requestID" value="" required><br>
                 <label for="email">Email: </label>
@@ -22,6 +21,7 @@
                 else if ($_GET["error"] == "wrongDetails") {
                     echo "<p>You entered the wrong ID or Email (or your request may not exist)!</p>";
                     echo "<p>please try again</p>";
+                    echo "<p>can't find req ID</p>";
                 }
                 else if ($_GET["error"] == "stmtfailed") {
                     echo "<p>Something went wrong, try again!</p>";
@@ -29,10 +29,6 @@
             }
         ?>
     </div>
-
-</body>
-
-</html>
 
 </body>
 
