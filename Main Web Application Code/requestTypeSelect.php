@@ -21,7 +21,7 @@
       </div>
       <br>
       <div class="text-center">
-        <div class="g-recaptcha" data-sitekey="6Lcd2XQfAAAAAG-O2-bZDut-YOYvGjX0xrr07TcI"></div>
+        
       </div>
       <br>
       <div class="text-center">
