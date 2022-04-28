@@ -1,10 +1,10 @@
 <?php
 
-$servername_db = 'localhost';
-$username_db = 'root';
+$servername_db = '
+$username_db = '
 $password_db = '';
-$name_db = 'honoursprojectmyad';
-$port = 3307;
+$name_db = '
+$port = 
 
 // Create connection
 $conn = new mysqli($servername_db, $username_db, $password_db, $name_db, $port);
