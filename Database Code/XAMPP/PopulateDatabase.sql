@@ -29,10 +29,10 @@ VALUES
     
 INSERT INTO `USERACCOUNTS` (`AccountID`,`AccountType`,`Username`,`Password`)
 VALUES
-	(1,'System Administrator','SYSADMIN','Sys_Admin2022HonProj'),
-	(2,'Technician','TECHNICIAN','Tech2022HonProj'),
-	(3,'Finance/Admin Staff','FINAD','Fin/Admin2022HonProj'),
-	(4,'Supervisor','SUPERVISOR','Superv2022HonProj');
+	(1,'System Administrator','SYSADMIN',''),
+	(2,'Technician','TECHNICIAN',''),
+	(3,'Finance/Admin Staff','FINAD',''),
+	(4,'Supervisor','SUPERVISOR','');
     
     
  /*   
