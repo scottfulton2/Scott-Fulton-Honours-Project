@@ -10,7 +10,7 @@ if (isset($_POST["submit"])) {
             exit();
         }
         elseif ($usertype == "student") {
-            $secret = "6Lcd2XQfAAAAAAxSG2-fZRZGz_H_0zLTWO9t1LaU";
+            $secret = "";
             $fileContents = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
             
             $data = json_decode($fileContents);
@@ -25,7 +25,7 @@ if (isset($_POST["submit"])) {
             }
         }
         elseif ($usertype == "staff") {
-            $secret = "6Lcd2XQfAAAAAAxSG2-fZRZGz_H_0zLTWO9t1LaU";
+            $secret = "";
             $fileContents = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
             
             $data = json_decode($fileContents);
@@ -40,7 +40,7 @@ if (isset($_POST["submit"])) {
             }
         }
         else {
-            $secret = "6Lcd2XQfAAAAAAxSG2-fZRZGz_H_0zLTWO9t1LaU";
+            $secret = "";
             $fileContents = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
             
             $data = json_decode($fileContents);
